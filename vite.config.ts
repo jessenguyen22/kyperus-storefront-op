@@ -6,6 +6,9 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
   plugins: [hydrogen(), oxygen(), reactRouter(), tsconfigPaths()],
+  css: {
+    postcss: './postcss.config.js',
+  },
   build: {
     // Allow a strict Content-Security-Policy
     // withtout inlining assets as base64:

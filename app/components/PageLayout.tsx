@@ -45,7 +45,7 @@ export function PageLayout({
           publicStoreDomain={publicStoreDomain}
         />
       )}
-      <main>{children}</main>
+      <main className="min-h-screen bg-brand-black">{children}</main>
       <Footer
         footer={footer}
         header={header}
